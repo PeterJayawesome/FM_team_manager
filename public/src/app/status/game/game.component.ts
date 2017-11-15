@@ -18,6 +18,9 @@ export class GameComponent implements OnInit {
     this._managerService.getGamePlayers(this.game_id,(res)=>{
       this.players = res;
     })
+    this._managerService.getGamePlayers(this.game_id,(res)=>{
+      this.players = res;
+    })
   }
 
   ngOnInit() {
